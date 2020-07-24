@@ -1,0 +1,32 @@
+{
+  "name": "chirper",
+  "version": "1.0.0",
+  "description": "A Twitter clone built with the MERN stack",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "debug": "node --inspect app.js",
+    "frontend-install": "yarn install --prefix frontend",
+    "frontend": "yarn start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\""
+  },
+  "author": "Trevor Uptain",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^5.2.0",
+    "create-react-app": "^3.4.1",
+    "express": "^4.16.4",
+    "frontend": "^2.0.0-alpha.4",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.9.25",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^10.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
