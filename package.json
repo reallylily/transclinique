@@ -7,8 +7,8 @@
     "start": "node app.js",
     "server": "nodemon app.js",
     "debug": "node --inspect app.js",
-    "frontend-install": "yarn install --prefix frontend",
-    "frontend": "yarn start --prefix frontend",
+    "frontend-install": "npm install --prefix frontend",
+    "frontend": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run frontend\""
   },
   "author": "Trevor Uptain",
