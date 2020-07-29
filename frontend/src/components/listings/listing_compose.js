@@ -1,29 +1,29 @@
 import React from 'react';
-import TweetBox from './tweet_box';
+import ListingBox from './listing_box';
 
-class TweetCompose extends React.Component {
+class ListingCompose extends React.Component {
   constructor(props) {
       super(props);
 
       this.state = {
           text: "",
-          newTweet: ""
+          newListing: ""
       }
 
       this.handleSubmit = this.handleSubmit.bind(this);
   } 
 
   componentWillReceiveProps(nextProps) {
-      this.setState({newTweet: nextProps.newTweet.text});
+      this.setState({newListing: nextProps.newListing.text});
   }
 
   handleSubmit(e) {
     e.preventDefault();
-    let tweet = {
+    let listing = {
       text: this.state.text
     };
 
-    this.props.composeTweet(tweet); 
+    this.props.composeListing(listing); 
     this.setState({text: ''})
   }
 
@@ -47,10 +47,10 @@ class TweetCompose extends React.Component {
                 </div>
             </form>
             <br />
-            <TweetBox text={this.state.newTweet} />
+            <ListingBox text={this.state.newListing} />
         </div>
     )
   }
 }
 
-export default TweetCompose;
+export default ListingCompose;

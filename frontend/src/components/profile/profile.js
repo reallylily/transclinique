@@ -1,33 +1,33 @@
 import React from 'react';
-import TweetBox from '../tweets/tweet_box';
+import ListingBox from '../listings/listing_box';
 
 class Profile extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            tweets: []
+            listings: []
         }
     }
     
     componentWillMount() {
         console.log(this.props.currentUser.id)
-        this.props.fetchUserTweets(this.props.currentUser.id);
+        this.props.fetchUserListings(this.props.currentUser.id);
     }
 
     componentWillReceiveProps(newState) {
-        this.setState({ tweets: newState.tweets });
+        this.setState({ listings: newState.listings });
     }   
     
     render() {
-        if (this.state.tweets.length === 0) {
+        if (this.state.listings.length === 0) {
           return (<div>This user has no listings</div>)
         } else {
           return (
             <div>
               <h2>All of This Artist's Listings</h2>
-              {this.state.tweets.map(tweet => (
-                <TweetBox key={tweet._id} text={tweet.text} />
+              {this.state.listings.map(listing => (
+                <ListingBox key={listing._id} text={listing.text} />
               ))}
             </div>
           );

@@ -1,33 +1,33 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import TweetBox from './tweet_box';
+import ListingBox from './listing_box';
 
-class Tweet extends React.Component {
+class Listing extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      tweets: []
+      listings: []
     }
   }
 
   componentWillMount() {
-    this.props.fetchTweets();
+    this.props.fetchListings();
   }
 
   componentWillReceiveProps(newState) {
-    this.setState({ tweets: newState.tweets });
+    this.setState({ listings: newState.listings });
   }
 
   render() {
-    if (this.state.tweets.length === 0) {
+    if (this.state.listings.length === 0) {
       return (<div>There are no posts</div>)
     } else {
       return (
         <div>
           <h2>Shop</h2>
-          {this.state.tweets.map(tweet => (
-            <TweetBox key={tweet._id} text={tweet.text} />
+          {this.state.listings.map(listing => (
+            <ListingBox key={listing._id} text={listing.text} />
           ))}
         </div>
       );
@@ -35,4 +35,4 @@ class Tweet extends React.Component {
   }
 }
 
-export default withRouter(Tweet);
+export default withRouter(Listing);
