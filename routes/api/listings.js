@@ -45,9 +45,13 @@ router.post('/',
       const newListing = new Listing({
         title: req.body.title,
         text: req.body.text,
-        size: req.body.size,
-        // storepolicy: req.body.storepolicy,
         listingstatus: req.body.listingstatus,
+        size: req.body.size,
+        finishes: req.body.finishes,
+        length: req.body.length,
+        shapes: req.body.shapes,
+        colors: req.body.colors,
+        styles: req.body.styles,
         user: req.user.id,
       });
   

@@ -8,9 +8,13 @@ class ListingCompose extends React.Component {
       this.state = {
           title: '',
           text: "",
-          size: {},
-          // storepolicy: '',
           listingstatus: '',
+          size: {},
+          finishes: {},
+          length: {},
+          shapes: {},
+          colors: {},
+          styles: {},
           newListing: "",
       }
 
@@ -25,20 +29,29 @@ class ListingCompose extends React.Component {
     e.preventDefault();
     let listing = {
       title: this.state.title,
+      //Text is the listing description
       text: this.state.text,
-      size: this.state.size,
-      // storepolicy: this.state.storepolicy,
       listingstatus: this.state.listingstatus,
+
+      size: this.state.size,      
+      finishes: this.state.finishes,
+      length: this.state.length,
+      shapes: this.state.shapes,
+      colors: this.state.colors,
+      styles: this.state.styles,
     };
 
     this.props.composeListing(listing); 
     this.setState({
       title: '',
       text: '',
+      listingstatus: '',
       size: {},
       finishes: {},
       length: {},
-      listingstatus: '',
+      shapes: {},
+      colors: {},
+      styles: {},
     })
   }
 
@@ -78,49 +91,107 @@ class ListingCompose extends React.Component {
 
                   Size:
                   Small
-                  <input type="checkbox"
-                    name="small" 
-                    checked={!!this.state.size.small}
-                    onChange={this.updateObj('size')}
-                    />
+                  <input type="checkbox" name="small" onChange={this.updateObj('size')}/>
                   Medium
-                  <input type="checkbox"
-                    name="medium" 
-                    checked={!!this.state.size.medium}
-                    onChange={this.updateObj('size')}
-                  />                  
+                  <input type="checkbox" name="medium" onChange={this.updateObj('size')}/>                  
                   Large
-                  <input type="checkbox"
-                    name="large" 
-                    checked={!!this.state.size.large}
-                    onChange={this.updateObj('size')}
-                  />                  
+                  <input type="checkbox" name="large" onChange={this.updateObj('size')}/>                  
                   X Large
-                  <input type="checkbox"
-                    name="xl" 
-                    checked={!!this.state.size.xl}
-                    onChange={this.updateObj('size')}
-                  />                  
+                  <input type="checkbox" name="xl" onChange={this.updateObj('size')}/>                  
                   XX Large
-                  <input type="checkbox"
-                    name="xxl" 
-                    checked={!!this.state.size.xxl}
-                    onChange={this.updateObj('size')}
-                  />
+                  <input type="checkbox" name="xxl" onChange={this.updateObj('size')}/>
                   <br/>                  
                   Full Set (Contact Artist)
-                  <input type="checkbox"
-                    name="fullset" 
-                    checked={!!this.state.size.fullset}
-                    onChange={this.updateObj('size')}
-                  />                  
+                  <input type="checkbox" name="fullset" onChange={this.updateObj('size')}/>                  
                   Custom Size (Contact Artist)
-                  <input type="checkbox"
-                    name="customsize" 
-                    checked={!!this.state.size.customsize}
-                    onChange={this.updateObj('size')}
-                  />
+                  <input type="checkbox" name="customsize" onChange={this.updateObj('size')}/>
 
+                  <br/>
+                  Finishes:
+                  Matte
+                  <input type="checkbox" name="matte" onChange={this.updateObj('finishes')}/>
+                  Gloss
+                  <input type="checkbox" name="gloss" onChange={this.updateObj('finishes')}/>
+
+                  <br/>
+                  Length:
+                  Short
+                  <input type="checkbox" name="short" onChange={this.updateObj('length')}/>
+                  Medium
+                  <input type="checkbox" name="medium" onChange={this.updateObj('length')}/>
+                  Long
+                  <input type="checkbox" name="long" onChange={this.updateObj('length')}/>
+                  Extra Long
+                  <input type="checkbox" name="extralong" onChange={this.updateObj('length')}/>
+
+                  <br/>
+                  Shapes:
+                  Coffin
+                  <input type="checkbox" name="coffin" onChange={this.updateObj('shapes')}/>
+                  Stiletto
+                  <input type="checkbox" name="stiletto" onChange={this.updateObj('shapes')}/>
+                  Square
+                  <input type="checkbox" name="square" onChange={this.updateObj('shapes')}/>
+                  Almond
+                  <input type="checkbox" name="almond" onChange={this.updateObj('shapes')}/>
+                  Oval
+                  <input type="checkbox" name="oval" onChange={this.updateObj('shapes')}/>
+                  Round
+                  <input type="checkbox" name="long" onChange={this.updateObj('shapes')}/>
+                  Ballerina
+                  <input type="checkbox" name="long" onChange={this.updateObj('shapes')}/>
+
+                  <br/>
+                  Colors:
+                  Pink
+                  <input type="checkbox" name="pink" onChange={this.updateObj('colors')}/>
+                  White
+                  <input type="checkbox" name="white" onChange={this.updateObj('colors')}/>
+                  Orange
+                  <input type="checkbox" name="square" onChange={this.updateObj('colors')}/>
+                  Red
+                  <input type="checkbox" name="almond" onChange={this.updateObj('colors')}/>
+                  Black
+                  <input type="checkbox" name="oval" onChange={this.updateObj('colors')}/>
+                  Blue
+                  <input type="checkbox" name="long" onChange={this.updateObj('colors')}/>
+                  Green
+                  <input type="checkbox" name="long" onChange={this.updateObj('colors')}/>
+                  Purple
+                  <input type="checkbox" name="long" onChange={this.updateObj('colors')}/>                  
+                  Brown
+                  <input type="checkbox" name="long" onChange={this.updateObj('colors')}/>                  
+                  Yellow
+                  <input type="checkbox" name="long" onChange={this.updateObj('colors')}/>                  
+                  Clear
+                  <input type="checkbox" name="long" onChange={this.updateObj('colors')}/>                  
+                  Gold
+                  <input type="checkbox" name="long" onChange={this.updateObj('colors')}/>                  
+                  Silver
+                  <input type="checkbox" name="long" onChange={this.updateObj('colors')}/>                  
+                  Other
+                  <input type="checkbox" name="long" onChange={this.updateObj('colors')}/>
+
+                  <br/>
+                  Styles:
+                  Plain
+                  <input type="checkbox" name="pink" onChange={this.updateObj('styles')}/>
+                  Bling
+                  <input type="checkbox" name="white" onChange={this.updateObj('styles')}/>
+                  Textured (i.e. Glitter, 3D)
+                  <input type="checkbox" name="square" onChange={this.updateObj('styles')}/>
+                  Pattern
+                  <input type="checkbox" name="almond" onChange={this.updateObj('styles')}/>
+                  Neon
+                  <input type="checkbox" name="oval" onChange={this.updateObj('styles')}/>
+                  Character (i.e. Cartoons, Anime)
+                  <input type="checkbox" name="long" onChange={this.updateObj('styles')}/>
+                  Themed (i.e. Butterfly, Floral)
+                  <input type="checkbox" name="long" onChange={this.updateObj('styles')}/>
+                  Occassion (i.e. Birthday, Seasons)
+                  <input type="checkbox" name="long" onChange={this.updateObj('styles')}/>                  
+                  Other
+                  <input type="checkbox" name="long" onChange={this.updateObj('styles')}/>
                   
                   {/* I accept returns and exchanges
                   <input type="checkbox" value="I accept returns and exchanges"/>

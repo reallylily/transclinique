@@ -16,8 +16,13 @@ const ListingSchema = new Schema({
   },
   size: {
     type: Object,
-    properties: {},
+    // properties: {},
   },
+  finishes: {type: Object},
+  length: {type: Object},
+  shapes: {type: Object},
+  colors: {type: Object},
+  styles: {type: Object},
   listingstatus: {
     type: String,
     // required: false
