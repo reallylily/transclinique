@@ -6,30 +6,36 @@ class ListingCompose extends React.Component {
       super(props);
 
       this.state = {
+          title: '',
           text: "",
-          newListing: ""
+          newListing: "",
       }
 
       this.handleSubmit = this.handleSubmit.bind(this);
   } 
 
   componentWillReceiveProps(nextProps) {
-      this.setState({newListing: nextProps.newListing.text});
+      // this.setState({newListing: nextProps.newListing});
+      this.setState({newListing: nextProps.newListing});
   }
 
   handleSubmit(e) {
     e.preventDefault();
     let listing = {
-      text: this.state.text
+      title: this.state.title,
+      text: this.state.text,
     };
 
     this.props.composeListing(listing); 
-    this.setState({text: ''})
+    this.setState({
+      title: '',
+      text: '',
+    })
   }
 
-  update() {
+  update(field) {
     return e => this.setState({
-      text: e.currentTarget.value
+      [field]: e.currentTarget.value
     });
   }
 
@@ -38,16 +44,23 @@ class ListingCompose extends React.Component {
         <div>
             <form onSubmit={this.handleSubmit}>
                 <div>
-                    <input type="textarea"
-                        value={this.state.text}
-                        onChange={this.update()}
-                        placeholder="Title..."
-                    />
+                  Title
+                  <input type="textarea"
+                    value={this.state.title}
+                    onChange={this.update('title')}
+                    placeholder="Title..."
+                  />
+                  Description      
+                  <input type="textarea" 
+                    value={this.state.text}
+                    onChange={this.update('text')}
+                    placeholder="Description"
+                  />
                     <input type="submit" value="Submit" />
                 </div>
             </form>
             <br />
-            <ListingBox text={this.state.newListing} />
+            <ListingBox listing={this.state.newListing} />
         </div>
     )
   }

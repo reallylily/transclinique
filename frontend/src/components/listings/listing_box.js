@@ -4,7 +4,8 @@ class ListingBox extends React.Component {
   render() {
     return (
         <div>
-            <h3>{this.props.text}</h3>
+            <h2>{this.props.listing.title}</h2>
+            <h3>{this.props.listing.text}</h3>
         </div>
     );
   }

@@ -27,7 +27,7 @@ class Listing extends React.Component {
         <div>
           <h2>Shop</h2>
           {this.state.listings.map(listing => (
-            <ListingBox key={listing._id} text={listing.text} />
+            <ListingBox key={listing._id} listing={listing} />
           ))}
         </div>
       );

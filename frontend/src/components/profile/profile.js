@@ -27,7 +27,7 @@ class Profile extends React.Component {
             <div>
               <h2>All of This Artist's Listings</h2>
               {this.state.listings.map(listing => (
-                <ListingBox key={listing._id} text={listing.text} />
+                <ListingBox key={listing._id} listing={listing} />
               ))}
             </div>
           );

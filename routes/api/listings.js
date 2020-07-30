@@ -39,8 +39,11 @@ router.post('/',
       if (!isValid) {
         return res.status(400).json(errors);
       }
+
+      console.log(req)
   
       const newListing = new Listing({
+        title: req.body.title,
         text: req.body.text,
         user: req.user.id
       });
