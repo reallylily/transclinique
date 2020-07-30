@@ -8,7 +8,8 @@ class ListingCompose extends React.Component {
       this.state = {
           title: '',
           text: "",
-          storepolicy: '',
+          size: {},
+          // storepolicy: '',
           listingstatus: '',
           newListing: "",
       }
@@ -25,7 +26,8 @@ class ListingCompose extends React.Component {
     let listing = {
       title: this.state.title,
       text: this.state.text,
-      storepolicy: this.state.storepolicy,
+      size: this.state.size,
+      // storepolicy: this.state.storepolicy,
       listingstatus: this.state.listingstatus,
     };
 
@@ -33,15 +35,24 @@ class ListingCompose extends React.Component {
     this.setState({
       title: '',
       text: '',
-      storepolicy: '',
+      size: {},
+      finishes: {},
+      length: {},
       listingstatus: '',
     })
   }
 
   update(field) {
     return e => this.setState({
-      [field]: e.currentTarget.value
+      [field]: e.currentTarget.value 
     });
+  }
+
+  updateObj(field) {
+    // console.log(this)
+    return e => this.setState({ [field]: Object.assign( this.state[field] || {}, {
+      [e.target.name]: e.target.checked
+  } ) } );
   }
 
   render() {
@@ -65,14 +76,74 @@ class ListingCompose extends React.Component {
                   />
                   <br/>
 
-                  Store Policy, Fees and Shipping Details:
+                  Size:
+                  Small
+                  <input type="checkbox"
+                    name="small" 
+                    checked={!!this.state.size.small}
+                    onChange={this.updateObj('size')}
+                    />
+                  Medium
+                  <input type="checkbox"
+                    name="medium" 
+                    checked={!!this.state.size.medium}
+                    onChange={this.updateObj('size')}
+                  />                  
+                  Large
+                  <input type="checkbox"
+                    name="large" 
+                    checked={!!this.state.size.large}
+                    onChange={this.updateObj('size')}
+                  />                  
+                  X Large
+                  <input type="checkbox"
+                    name="xl" 
+                    checked={!!this.state.size.xl}
+                    onChange={this.updateObj('size')}
+                  />                  
+                  XX Large
+                  <input type="checkbox"
+                    name="xxl" 
+                    checked={!!this.state.size.xxl}
+                    onChange={this.updateObj('size')}
+                  />
+                  <br/>                  
+                  Full Set (Contact Artist)
+                  <input type="checkbox"
+                    name="fullset" 
+                    checked={!!this.state.size.fullset}
+                    onChange={this.updateObj('size')}
+                  />                  
+                  Custom Size (Contact Artist)
+                  <input type="checkbox"
+                    name="customsize" 
+                    checked={!!this.state.size.customsize}
+                    onChange={this.updateObj('size')}
+                  />
+
+                  
+                  {/* I accept returns and exchanges
+                  <input type="checkbox" value="I accept returns and exchanges"/>
+                  <br/>
+                  I accept PayPal
+                  <input type="checkbox" value="I accept PayPal"/>
+                  <br/>
+                  I accept credit card(s)
+                  <input type="checkbox" value="I accept credit card(s)"/>
+                  <br/>
+                  I accept full and custom sets for an additional fee
+                  <input type="checkbox" value="I accept full and custom sets for an additional fee"/>
+     
+                  <br/> */}
+
+                  {/* Store Policy, Fees and Shipping Details:
                   <input type="textarea" 
                     value={this.state.storepolicy}
                     onChange={this.update('storepolicy')}
                     placeholder="Enter text here"
                   />
+                  <br/> */}
                   <br/>
-
                   Listing Status:
                   <input type="textarea" 
                     value={this.state.listingstatus}

@@ -14,9 +14,9 @@ const ListingSchema = new Schema({
     type: String,
     // required: true
   },
-  storepolicy: {
-    type: String,
-    // required: false
+  size: {
+    type: Object,
+    properties: {},
   },
   listingstatus: {
     type: String,
