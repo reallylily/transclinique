@@ -8,6 +8,8 @@ class ListingCompose extends React.Component {
       this.state = {
           title: '',
           text: "",
+          storepolicy: '',
+          listingstatus: '',
           newListing: "",
       }
 
@@ -15,7 +17,6 @@ class ListingCompose extends React.Component {
   } 
 
   componentWillReceiveProps(nextProps) {
-      // this.setState({newListing: nextProps.newListing});
       this.setState({newListing: nextProps.newListing});
   }
 
@@ -24,12 +25,16 @@ class ListingCompose extends React.Component {
     let listing = {
       title: this.state.title,
       text: this.state.text,
+      storepolicy: this.state.storepolicy,
+      listingstatus: this.state.listingstatus,
     };
 
     this.props.composeListing(listing); 
     this.setState({
       title: '',
       text: '',
+      storepolicy: '',
+      listingstatus: '',
     })
   }
 
@@ -48,15 +53,34 @@ class ListingCompose extends React.Component {
                   <input type="textarea"
                     value={this.state.title}
                     onChange={this.update('title')}
-                    placeholder="Title..."
+                    placeholder="Title (Required Field)"
                   />
+                  <br/>
+
                   Description      
                   <input type="textarea" 
                     value={this.state.text}
                     onChange={this.update('text')}
-                    placeholder="Description"
+                    placeholder="Enter text here"
                   />
-                    <input type="submit" value="Submit" />
+                  <br/>
+
+                  Store Policy, Fees and Shipping Details:
+                  <input type="textarea" 
+                    value={this.state.storepolicy}
+                    onChange={this.update('storepolicy')}
+                    placeholder="Enter text here"
+                  />
+                  <br/>
+
+                  Listing Status:
+                  <input type="textarea" 
+                    value={this.state.listingstatus}
+                    onChange={this.update('listingstatus')}
+                    placeholder="Enter text here"
+                  />
+                  <br/>
+                  <input type="submit" value="Submit" />
                 </div>
             </form>
             <br />

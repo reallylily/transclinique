@@ -45,7 +45,9 @@ router.post('/',
       const newListing = new Listing({
         title: req.body.title,
         text: req.body.text,
-        user: req.user.id
+        storepolicy: req.body.storepolicy,
+        listingstatus: req.body.listingstatus,
+        user: req.user.id,
       });
   
       newListing.save().then(listing => res.json(listing));

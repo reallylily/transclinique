@@ -12,8 +12,17 @@ const ListingSchema = new Schema({
   },  
   text: {
     type: String,
-    required: true
+    // required: true
   },
+  storepolicy: {
+    type: String,
+    // required: false
+  },
+  listingstatus: {
+    type: String,
+    // required: false
+  },
+
   date: {
     type: Date,
     default: Date.now

@@ -6,7 +6,7 @@ import listings from './listings_reducer';
 const RootReducer = combineReducers({
   errors,
   session,
-  listings
+  listings,
 });
 
 export default RootReducer;
