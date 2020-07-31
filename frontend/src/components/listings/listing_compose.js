@@ -9,6 +9,7 @@ class ListingCompose extends React.Component {
           title: '',
           text: "",
           listingstatus: '',
+          price: 0,
           size: {},
           finishes: {},
           length: {},
@@ -28,11 +29,11 @@ class ListingCompose extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     let listing = {
+      listingstatus: this.state.listingstatus,
       title: this.state.title,
       //Text is the listing description
       text: this.state.text,
-      listingstatus: this.state.listingstatus,
-
+      price: this.state.price,
       size: this.state.size,      
       finishes: this.state.finishes,
       length: this.state.length,
@@ -43,9 +44,9 @@ class ListingCompose extends React.Component {
 
     this.props.composeListing(listing); 
     this.setState({
+      listingstatus: '',
       title: '',
       text: '',
-      listingstatus: '',
       size: {},
       finishes: {},
       length: {},
@@ -62,17 +63,32 @@ class ListingCompose extends React.Component {
   }
 
   updateObj(field) {
-    // console.log(this)
     return e => this.setState({ [field]: Object.assign( this.state[field] || {}, {
       [e.target.name]: e.target.checked
-  } ) } );
+    } ) } );
   }
+
+  // updatePrice(field){
+  //   this.update(field)
+  //   this.setTwoNumberDecimal()
+  // }
+
+  // setTwoNumberDecimal(event) {
+  //   this.value = parseFloat(this.value).toFixed(2);
+  // }
 
   render() {
     return (
         <div>
             <form onSubmit={this.handleSubmit}>
                 <div>
+                  Listing Status:
+                  <input type="textarea" 
+                    value={this.state.listingstatus}
+                    onChange={this.update('listingstatus')}
+                    placeholder="Enter text here"
+                  />
+                  <br/>
                   Title
                   <input type="textarea"
                     value={this.state.title}
@@ -87,6 +103,16 @@ class ListingCompose extends React.Component {
                     onChange={this.update('text')}
                     placeholder="Enter text here"
                   />
+                  <br/>
+
+                  Price $   
+                  <input type="number" 
+                    value={this.state.price}
+                    min="0"
+                    onChange={this.update('price')}
+                    placeholder="Enter price here in USD"
+                  />
+                  (Please Enter in USD)
                   <br/>
 
                   Size:
@@ -137,9 +163,9 @@ class ListingCompose extends React.Component {
                   Oval
                   <input type="checkbox" name="oval" onChange={this.updateObj('shapes')}/>
                   Round
-                  <input type="checkbox" name="long" onChange={this.updateObj('shapes')}/>
+                  <input type="checkbox" name="round" onChange={this.updateObj('shapes')}/>
                   Ballerina
-                  <input type="checkbox" name="long" onChange={this.updateObj('shapes')}/>
+                  <input type="checkbox" name="ballerina" onChange={this.updateObj('shapes')}/>
 
                   <br/>
                   Colors:
@@ -148,50 +174,50 @@ class ListingCompose extends React.Component {
                   White
                   <input type="checkbox" name="white" onChange={this.updateObj('colors')}/>
                   Orange
-                  <input type="checkbox" name="square" onChange={this.updateObj('colors')}/>
+                  <input type="checkbox" name="orange" onChange={this.updateObj('colors')}/>
                   Red
-                  <input type="checkbox" name="almond" onChange={this.updateObj('colors')}/>
+                  <input type="checkbox" name="red" onChange={this.updateObj('colors')}/>
                   Black
-                  <input type="checkbox" name="oval" onChange={this.updateObj('colors')}/>
+                  <input type="checkbox" name="black" onChange={this.updateObj('colors')}/>
                   Blue
-                  <input type="checkbox" name="long" onChange={this.updateObj('colors')}/>
+                  <input type="checkbox" name="blue" onChange={this.updateObj('colors')}/>
                   Green
-                  <input type="checkbox" name="long" onChange={this.updateObj('colors')}/>
+                  <input type="checkbox" name="green" onChange={this.updateObj('colors')}/>
                   Purple
-                  <input type="checkbox" name="long" onChange={this.updateObj('colors')}/>                  
+                  <input type="checkbox" name="purple" onChange={this.updateObj('colors')}/>                  
                   Brown
-                  <input type="checkbox" name="long" onChange={this.updateObj('colors')}/>                  
+                  <input type="checkbox" name="brown" onChange={this.updateObj('colors')}/>                  
                   Yellow
-                  <input type="checkbox" name="long" onChange={this.updateObj('colors')}/>                  
+                  <input type="checkbox" name="yellow" onChange={this.updateObj('colors')}/>                  
                   Clear
-                  <input type="checkbox" name="long" onChange={this.updateObj('colors')}/>                  
+                  <input type="checkbox" name="clear" onChange={this.updateObj('colors')}/>                  
                   Gold
-                  <input type="checkbox" name="long" onChange={this.updateObj('colors')}/>                  
+                  <input type="checkbox" name="gold" onChange={this.updateObj('colors')}/>                  
                   Silver
-                  <input type="checkbox" name="long" onChange={this.updateObj('colors')}/>                  
+                  <input type="checkbox" name="silver" onChange={this.updateObj('colors')}/>                  
                   Other
-                  <input type="checkbox" name="long" onChange={this.updateObj('colors')}/>
+                  <input type="checkbox" name="other" onChange={this.updateObj('colors')}/>
 
                   <br/>
                   Styles:
                   Plain
-                  <input type="checkbox" name="pink" onChange={this.updateObj('styles')}/>
+                  <input type="checkbox" name="plain" onChange={this.updateObj('styles')}/>
                   Bling
-                  <input type="checkbox" name="white" onChange={this.updateObj('styles')}/>
+                  <input type="checkbox" name="bling" onChange={this.updateObj('styles')}/>
                   Textured (i.e. Glitter, 3D)
-                  <input type="checkbox" name="square" onChange={this.updateObj('styles')}/>
+                  <input type="checkbox" name="textured" onChange={this.updateObj('styles')}/>
                   Pattern
-                  <input type="checkbox" name="almond" onChange={this.updateObj('styles')}/>
+                  <input type="checkbox" name="pattern" onChange={this.updateObj('styles')}/>
                   Neon
-                  <input type="checkbox" name="oval" onChange={this.updateObj('styles')}/>
+                  <input type="checkbox" name="neon" onChange={this.updateObj('styles')}/>
                   Character (i.e. Cartoons, Anime)
-                  <input type="checkbox" name="long" onChange={this.updateObj('styles')}/>
+                  <input type="checkbox" name="character" onChange={this.updateObj('styles')}/>
                   Themed (i.e. Butterfly, Floral)
-                  <input type="checkbox" name="long" onChange={this.updateObj('styles')}/>
+                  <input type="checkbox" name="theme" onChange={this.updateObj('styles')}/>
                   Occassion (i.e. Birthday, Seasons)
-                  <input type="checkbox" name="long" onChange={this.updateObj('styles')}/>                  
+                  <input type="checkbox" name="occassion" onChange={this.updateObj('styles')}/>                  
                   Other
-                  <input type="checkbox" name="long" onChange={this.updateObj('styles')}/>
+                  <input type="checkbox" name="other" onChange={this.updateObj('styles')}/>
                   
                   {/* I accept returns and exchanges
                   <input type="checkbox" value="I accept returns and exchanges"/>
@@ -214,13 +240,6 @@ class ListingCompose extends React.Component {
                     placeholder="Enter text here"
                   />
                   <br/> */}
-                  <br/>
-                  Listing Status:
-                  <input type="textarea" 
-                    value={this.state.listingstatus}
-                    onChange={this.update('listingstatus')}
-                    placeholder="Enter text here"
-                  />
                   <br/>
                   <input type="submit" value="Submit" />
                 </div>

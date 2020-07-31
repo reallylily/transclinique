@@ -6,27 +6,22 @@ const ListingSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: 'users'
   },
+  listingstatus: {type: String},
   title: {
     type: String,
     required: true
   },  
-  text: {
-    type: String,
-    // required: true
+  text: {type: String},
+  price: {
+    type: Number,
+    required: true
   },
-  size: {
-    type: Object,
-    // properties: {},
-  },
+  size: {type: Object},
   finishes: {type: Object},
   length: {type: Object},
   shapes: {type: Object},
   colors: {type: Object},
   styles: {type: Object},
-  listingstatus: {
-    type: String,
-    // required: false
-  },
 
   date: {
     type: Date,

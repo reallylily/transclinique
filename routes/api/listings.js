@@ -43,9 +43,10 @@ router.post('/',
       console.log(req)
   
       const newListing = new Listing({
+        listingstatus: req.body.listingstatus,
         title: req.body.title,
         text: req.body.text,
-        listingstatus: req.body.listingstatus,
+        price: req.body.price,
         size: req.body.size,
         finishes: req.body.finishes,
         length: req.body.length,
