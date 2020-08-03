@@ -1,7 +1,11 @@
 import axios from 'axios';
 
+export const getListing = id => {
+  return axios.get(`/api/listings/${id}`)
+};
+
 export const getListings = () => {
-  return axios.get('/api/listings')
+  return axios.get(`/api/listings`)
 };
 
 export const getUserListings = id => {

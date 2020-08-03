@@ -11,12 +11,13 @@ class Listing extends React.Component {
     }
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.props.fetchListings();
   }
 
   componentWillReceiveProps(newState) {
     this.setState({ listings: newState.listings });
+    // console.log(this.state.listings)
   }
 
   render() {
@@ -26,9 +27,12 @@ class Listing extends React.Component {
       return (
         <div>
           <h2>Shop</h2>
+          
           {this.state.listings.map(listing => (
+            // <Link to={`/listing/`} key={listing._id} params={{ listing: listing }}>{listing.title}</Link>
             <ListingBox key={listing._id} listing={listing} />
-          ))}
+            ))}
+          
         </div>
       );
     }

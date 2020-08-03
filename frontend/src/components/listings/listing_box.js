@@ -1,11 +1,15 @@
+import { Link } from 'react-router-dom';
 import React from 'react';
 
 class ListingBox extends React.Component {
   render() {
     return (
         <div>
-            <h2>{this.props.listing.title}</h2>
-            <h3>{this.props.listing.text}</h3>
+          <h3>
+            <Link to={`/listings/${this.props.listing._id}`} key={this.props.listing._id} params={{ listing: this.props.listing }}>{this.props.listing.title}</Link>
+          </h3>
+            <p>${this.props.listing.price}</p>
+            {/* <p>{this.props.listing.text}</p> */}
         </div>
     );
   }
