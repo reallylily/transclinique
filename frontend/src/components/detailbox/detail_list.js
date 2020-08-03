@@ -9,11 +9,9 @@ class DetailList extends React.Component {
     } else {
       return (
         <div>
-          <h4>
-            {this.props.name}
-          </h4>
+          <span>{this.props.name}: </span>
           <p>
-            {details.map(el=> el += ', ')}
+            {details.map((el, i, arr)=> ((i !== arr.length - 1) ? el += ', ' : el))}
           </p>
         </div>
     );

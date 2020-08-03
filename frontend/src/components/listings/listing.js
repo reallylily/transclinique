@@ -1,6 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import DetailList from '../detailbox/detail_list';
+import DetailDropdown from '../detailbox/detail_dropdown';
 
 class Listing extends React.Component {
   constructor(props) {
@@ -56,11 +57,22 @@ class Listing extends React.Component {
             </h1>
             <h2>${this.state.listing.price}</h2>
             <p>{this.state.listing.text}</p>
-            <DetailList key='colors' name='colors' details={this.state.catagories.colors}/>
-            <DetailList key='finishes' name='finishes' details={this.state.catagories.finishes}/>
-            <DetailList key='styles' name='styles' details={this.state.catagories.styles}/>
-            <p></p>
-            <p>{this.state.listing.listingstatus}</p>
+              <DetailList key='colors' name='colors' details={this.state.catagories.colors}/>
+              {/* <DetailList key='finishes' name='finishes' details={this.state.catagories.finishes}/> */}
+              <DetailList key='styles' name='styles' details={this.state.catagories.styles}/>
+            
+            <form onSubmit={this.handleSubmit}>
+              <DetailDropdown key='size' name='size' options={this.state.catagories.size}/>
+              <br/>
+              <DetailDropdown key='length' name='length' options={this.state.catagories.length}/>
+              <br/>
+              <DetailDropdown key='shapes' name='shapes' options={this.state.catagories.shapes}/>
+              <br/>
+              <DetailDropdown key='finishes' name='finishes' options={this.state.catagories.finishes}/>
+          
+            </form>
+            
+            <p>Listing Status: {this.state.listing.listingstatus}</p>
 
         </div>
       );
