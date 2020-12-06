@@ -1,0 +1,107 @@
+@media only screen and (max-width: 850px) {
+
+  .home header, header {text-align: left; border-width:0; padding:0; background-size: 150%}
+  .home header h1, header h1 {grid-column: 1 / span 1; grid-row: 1 / span 1; justify-self: start; align-self: center; margin:0; padding: 2rem; font-size:3rem;}
+  .home header nav, header nav {grid-column: 2 / span 1; grid-row: 1 / span 1; justify-self: end; align-self: center; padding:2rem;}
+  .home header nav svg {display:block; width:3rem;}
+  .home rect {fill:#ffffff}
+  .home header nav svg:hover {cursor:pointer}
+  .home header nav div {display:none;}
+
+  .home header nav {position:relative;}
+  .home header nav div, header nav div {display:none; padding:8rem 0; text-align:center; background:black; position:absolute; right:0; top:0;}
+  .home header nav div a, header nav div a {display:block; padding:1rem 5rem; font-size:2rem;}
+  .home header nav div img, header nav div img {display:block; width:30%; padding:1rem; margin:2rem auto;}
+  .home header nav:hover div {display:block; transition-delay: 0.5s;}
+
+  .home header p {grid-column: 1 / span 2; grid-row: 3 / span 1; place-self: start center; font-size:2rem; margin: 65% 0 0 0; padding:2rem; background-color: rgba(0, 0, 0, 0.75);}
+
+  section {padding:2rem;}
+
+
+  section {column-gap:0; }
+
+  section#quote {padding:0;}
+  #quote img {width:30%}
+
+  section#mission, section#about {padding-left:0; grid-template-rows:15% 1fr; grid-template-rows: auto auto 5rem auto auto}
+  #mission img, #about img {grid-column: 1 / span 3; grid-row: 1 / span 3; justify-self: start; align-self: end; width:70%}
+  #mission h2, #about h2 {grid-column: 1 / span 3; grid-row: 4 / span 1; margin-top:5rem; padding-left:10%;}
+  #mission p, #about p {grid-column: 1 / span 3; grid-row:5 / span 1; padding:0 10%}
+  #mission hr {grid-column: 2 / span 2; grid-row: 3/ span 1; justify-self: center; align-self: start}
+  #about hr {grid-column: 3/ span 1; grid-row: 7 / span 1; justify-self:end; align-self: end; bottom:-5rem}
+
+  #Alexis-Petra-MD img {grid-column: 1/ span 2; grid-row: 1 / span 1; justify-self:end; align-self: start; width:60%}
+  #Alexis-Petra-MD h2 {grid-column: 1/ span 2; grid-row: 2 / span 1; margin-top:5rem}
+  #Alexis-Petra-MD h3 {grid-column: 1/ span 2; grid-row: 3 / span 1}
+  #Alexis-Petra-MD p {grid-column: 1/ span 2; ; grid-row: 4 / span 1}
+
+  section#process {background:none}
+  #process h2 {grid-column: 1/ span 2; grid-row: 1 / span 1}
+  #process h3 {grid-column: 1/ span 2; grid-row: 2 / span 1}
+  #process p {grid-column: 1/ span 2; grid-row: 3 / span 1}
+  #process ul {grid-column: 1/ span 2; grid-row: 4 / span 1}
+
+  section#services {padding-right:0; grid-template-columns: 40% 1fr; grid-template-rows: auto auto auto auto 5rem auto auto auto}
+  #services h2 {grid-column: 1/ span 2; grid-row: 1 / span 1; align-self:start;}
+  #services img {grid-column: 1/ span 2; grid-row: 2 / span 4; justify-self: end; align-self: end; width:70%}
+  #services hr {grid-column: 1 / span 1; grid-row: 5 / span 1; justify-self: center; align-self: start;}
+  #services h3 {grid-column: 1/ span 2; grid-row: 7 / span 1; margin-top:5rem}
+  #services ul {grid-column: 1/ span 2; grid-row: 8 / span 1}
+  #services li {line-height:1.5}
+  #services li li:first-of-type {margin-top:1em}
+
+  #expect {}
+  #expect h2 {justify-self:start}
+  #expect > div {margin-bottom:5rem;}
+  #expect #step1 {grid-column: 1 / span 2; grid-row: 3 / span 1}
+  #expect #step2 {grid-column: 1 / span 2; grid-row: 4 / span 1}
+  #expect #step3 {grid-column: 1 / span 2; grid-row: 5 / span 1}
+  #expect #note {grid-column: 1 / span 2; grid-row: 6 / span 1}
+  #expect hr {grid-column: 1/ span 1; grid-row: 7 / span 1;}
+
+  section#insurance-and-fees {background: none}
+  #insurance-and-fees h2 {grid-column: 1 / span 2; grid-row: 1 / span 1; margin-top:2rem}
+  #insurance-and-fees #fees {grid-column: 1 / span 2; grid-row: 2 / span 1}
+  #insurance-and-fees #labs {grid-column: 1 / span 2; grid-row: 3 / span 1}
+  #insurance-and-fees #medications {grid-column: 1 / span 2; grid-row: 4 / span 1}
+  #insurance-and-fees #insurance {grid-column: 1 / span 2; grid-row: 5 / span 1; padding:10%}
+
+  #appointments h2 {grid-column: 1 / span 2; grid-row: 1 / span 1}
+  #appointments h3 {grid-column: 1 / span 2; grid-row: 2 / span 1}
+  #appointments p:first-of-type {grid-column: 1 / span 2; grid-row: 3 / span 1}
+  #appointments p:nth-of-type(2) {grid-column: 1 / span 2; grid-row: 4 / span 1}
+  #appointments form {grid-column: 1 / span 2;  grid-row: 5 / span 1; margin-top:4rem}
+
+
+  #resources h2 {grid-column: 1 / span 2; grid-row: 1 / span 1; place-self: start}
+
+  #resources #pdf {grid-column: 1 / span 2; grid-row: 3 / span 1; display:block}
+
+  #pdf h3 {margin-bottom:5rem; text-align:left}
+  #pdf a {text-align:left; background:url(/img/paperclip.svg) left center no-repeat; background-size: 4rem; padding:1.15rem 0 1.15rem 5rem; margin:0}
+
+  #resources #external {grid-column: 1 / span 2; grid-row: 4 / span 1; display:block; }
+  #external h4 {padding:4rem 0 0 0;}
+  #mental-health-ca {grid-column: 1 / span 1; grid-row: 2 / span 1}
+  #legal {grid-column: 2 / span 1; grid-row: 2 / span 1;}
+  #external div {margin-bottom:7%}
+
+  #resources h2, h4 {text-align:left}
+  #resources a {font-size:1.7em; margin-bottom:1em; display:block}
+  #resources img {grid-column: 1 / span 2; grid-row: 9 / span 1; place-self: center; position:relative; width:20%; bottom:-50%}
+
+  footer nav:nth-of-type(1), footer nav:nth-of-type(2) {display: block}
+
+
+
+  footer p#copyright {grid-column: 1 / span 2; grid-row: 2 / span 1; margin-top:2rem;}
+  footer p#disclaimer {grid-column: 1 / span 2; grid-row: 3 / span 1}
+
+}
+
+@media only screen and (max-width: 600px) {
+  html, body {font-size:7px;}
+  .home header h1, header h1 {font-size:2rem;}
+  p, li {line-height:1.7;}
+}

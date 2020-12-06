@@ -10,7 +10,6 @@
     "frontend-install": "npm install --prefix frontend",
     "frontend": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run frontend\"",
-   
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "Trevor Uptain",
@@ -22,8 +21,11 @@
     "create-react-app": "^3.4.1",
     "express": "^4.16.4",
     "frontend": "^2.0.0-alpha.4",
+    "install": "^0.13.0",
     "jsonwebtoken": "^8.4.0",
     "mongoose": "^5.9.25",
+    "node-sass": "^4.14.1",
+    "npm": "^6.14.9",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
     "validator": "^10.9.0"
