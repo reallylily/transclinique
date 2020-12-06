@@ -11,7 +11,7 @@ class Profile extends React.Component {
     }
     
     componentDidMount() {
-        console.log(this.props.currentUser.id)
+        // console.log(this.props.currentUser.id)
         this.props.fetchUserListings(this.props.currentUser.id);
     }
 

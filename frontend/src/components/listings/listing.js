@@ -31,7 +31,7 @@ class Listing extends React.Component {
     const detailCatagories = ['colors', 'finishes', 'length', 'shapes', 'size', 'styles']
     detailCatagories.forEach(detail => {
       if (this.state.listing[detail]) {
-        // this.setState({ catagories[detail]: (Object.keys(this.state.listing[detail]).filter(el => this.state.listing[detail][el])});
+        // this.setState({ catagories[detail]: (Object.keys(this.props.listing[detail]).filter(el => this.props.listing[detail][el])});
         this.state.catagories[detail] = (Object.keys(this.state.listing[detail]).filter(el => this.state.listing[detail][el]))
       }
     })
@@ -40,7 +40,7 @@ class Listing extends React.Component {
   // componentWillReceiveProps(newState) {
   //   this.setState({ listing: newState.listing })
   //   this.makeArraysForComponents()
-  //   // console.log(this.state)
+  //   // console.log(this.props)
   // }
 
   render() {

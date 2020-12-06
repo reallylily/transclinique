@@ -30,6 +30,7 @@ class NavBar extends React.Component {
                 <Link to={'/listings'}>Shop</Link>
                 <Link to={'/signup'}>Signup</Link>
                 <Link to={'/login'}>Login</Link>
+        <img src="/img/header.jpg" alt="TransClinique"/>
             </div>
         );
       }
@@ -38,7 +39,6 @@ class NavBar extends React.Component {
   render() {
       return (
         <div>
-            <h1>PressOnShop</h1>
             { this.getLinks() }
         </div>
       );
