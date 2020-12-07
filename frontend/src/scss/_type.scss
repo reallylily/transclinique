@@ -1,0 +1,74 @@
+/** LINKS **/
+a {
+  color:white;
+  text-decoration: none;
+  
+  &:hover {
+    color: #C3DDF4;
+    transition: 0.5s;
+  }
+}
+
+/** HEADINGS **/
+h1,
+h2, 
+h3, 
+h4 {
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 0 0 1.5em 0;
+  line-height: 1;
+}
+
+h1 { 
+  margin: 0;
+
+  a {
+    color:black;
+  }
+}
+ 
+h1 strong {
+  font-weight: 1000;
+  letter-spacing: 3px;
+}
+
+h2 {
+  align-self: end;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+h3,
+h4 {
+  align-self: start;
+  color: #F5CBDB;
+  font-size: 2rem;
+}
+
+h4 {
+  color:white;
+}
+
+/** TEXT & LISTS **/
+p,
+ul,
+li {
+  align-self: start;
+  font-size: 1.9rem;
+  line-height: 2.5;
+  margin: 0 0 2rem 0;
+  list-style-type: disc;
+}
+
+hr {
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: #F4C3D6;
+  border: none;
+  width: 20rem;
+  height: 1rem;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}

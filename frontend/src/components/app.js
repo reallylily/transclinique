@@ -29,8 +29,10 @@ import SignupFormContainer from './session/signup_form_container';
 import ProfileContainer from './profile/profile_container';
 import ListingComposeContainer from './listings/listing_compose_container';
 
+import "../scss/style.scss";
+
 const App = () => (
-  <div>
+  <div className="App">
     <NavBarContainer />
     <Switch>
       <Route exact path="/" component={MainPage} />

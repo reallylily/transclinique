@@ -4,9 +4,7 @@ class MainPage extends React.Component {
 
   render() {
     return (
-      <div>
-        <img src="/img/header.jpg" alt="TransClinique"/>
-
+      <div className="home">
         <header id="home">
             <h1><strong>Trans</strong>Clinique</h1>
             <p>Using telemedicine to create a virtual trans clinic that provides high-quality, convenient, and compassionate trans and gender nonconforming specific health care.</p>
