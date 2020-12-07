@@ -1,19 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 class Footer extends React.Component {
 
   render() {
     return (
     <footer>
-        <nav>
-            <a href="/#about">About Us</a>
-            <a href="/#process">Our Process</a>
-            <a href="/#services">Our Services</a>
-            <a href="/#expect">What To Expect</a>
-            <a href="/#insurance-and-fees">Insurance &amp; Fees</a>
-            <a href="/#locations">Locations</a>
-            <a href="/#appointments">Appointments</a>
-            <a href="/#resources">Resources</a>
+        <img src="/img/transcliniqueLogo.svg" alt="TransClinique"/>
+        <nav className='footer-link-container'>
+                <Link to={'/'}>Home</Link>
+                <Link to={'/aboutus'}>About Us</Link>
+                <Link to={'/process'}>Our Process</Link>
+                <Link to={'/services'}>Our Services</Link>
+                <Link to={'/expect'}>What to Expect</Link>
+                <Link to={'/insurance-fees'}>Insurance &amp; Fees</Link>
+                <Link to={'/locations'}>Locations</Link>
+                <Link to={'/appointments'}>Appointments</Link>
+                <Link to={'/resources'}>Resources</Link>
         </nav>
         <nav>
             <a href="/terms-conditions.php">Website Terms &amp; Conditions</a>
@@ -34,6 +38,7 @@ class Footer extends React.Component {
              relationship between you and TransClinique and do not create a duty for us to follow up with you.
               To learn about our services, please contact us directly.
         </p>
+
     </footer>
     );
   }

@@ -54,6 +54,24 @@ header {
 
 /* FOOTER */
 footer {
+ 
+  .footer-link-container {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  img {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    place-self: center;
+    position: relative;
+    width: 10rem;
+    margin: auto;
+    top: -16rem;
+  }
+
   nav {
     a {
       display: block;
@@ -87,21 +105,21 @@ footer {
       }
     }
 
-    &:nth-of-type(1) {
-      grid-column: 1 / span 1;
-      grid-row: 1 / span 1;
-      display: grid;
-    }
+    // &:nth-of-type(1) {
+    //   grid-column: 1 / span 1;
+    //   grid-row: 1 / span 1;
+    //   display: grid;
+    // }
 
-    &:nth-of-type(1) a:nth-of-type(1) {
-      grid-column: 1 / span 1;
-      grid-row: 1 / span 1
-    }
+    // &:nth-of-type(1) a:nth-of-type(1) {
+    //   grid-column: 1 / span 1;
+    //   grid-row: 1 / span 1
+    // }
 
-    & a:nth-of-type(5) {
-      grid-column: 2 / span 1;
-      grid-row: 1 / span 1
-    }
+    // & a:nth-of-type(5) {
+    //   grid-column: 2 / span 1;
+    //   grid-row: 1 / span 1
+    // }
 
     &:nth-of-type(2) {
       grid-column: 2 / span 1;
@@ -110,8 +128,8 @@ footer {
       grid-template-columns: 15% 15% 1fr;
     }
 
-    &:nth-of-type(2) a:nth-of-type(1), footer nav:nth-of-type(2) a:nth-of-type(2) {
-      grid-column: 1 / span 3
+    &:nth-of-type(2) a:nth-of-type(1), &:nth-of-type(2) a:nth-of-type(2) {
+      grid-column: 1 / span 3;
     }
   }
 

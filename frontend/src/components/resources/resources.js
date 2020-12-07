@@ -47,7 +47,7 @@ class Resources extends React.Component {
                     <a href="https://www.translifeline.org/">Trans Lifeline</a>
                 </div>
             </div>
-            <img src="/img/transcliniqueLogo.svg" alt="TransClinique"/>
+            {/* <img src="/img/transcliniqueLogo.svg" alt="TransClinique"/> */}
         </section>  
 
     );
