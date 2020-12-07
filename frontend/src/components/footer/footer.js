@@ -18,9 +18,9 @@ class Footer extends React.Component {
         <nav>
             <a href="/terms-conditions.php">Website Terms &amp; Conditions</a>
             <a href="/privacy-policy.php">Website Privacy Policy</a>
-            <a class="email social-media" href="mailto:AlexisPetraMD@TransClinique.com"></a>
-            <a class="facebook social-media" href="https://www.facebook.com/transclinique"></a>
-            <a class="instagram social-media" href="https://www.instagram.com/transclinique/"></a>
+            <a className="email social-media" href="mailto:AlexisPetraMD@TransClinique.com"></a>
+            <a className="facebook social-media" href="https://www.facebook.com/transclinique"></a>
+            <a className="instagram social-media" href="https://www.instagram.com/transclinique/"></a>
         </nav>
         <p id="copyright">Copyright &copy; 2020 Alexis Petra, MD PLLC d/b/a TransClinique. All rights 
         reserved.
