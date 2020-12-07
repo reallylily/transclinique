@@ -9,6 +9,7 @@ import {
   Route,
 } from 'react-router-dom';
 import NavBarContainer from './nav/navbar_container';
+import Footer from './footer/footer.js'
 import MainPage from './main/main_page';
 import AboutUs from './aboutus/aboutus.js'
 import Process from './process/process.js';
@@ -51,6 +52,7 @@ const App = () => (
       <ProtectedRoute exact path="/profile" component={ProfileContainer} />
       <ProtectedRoute exact path="/new_listing" component={ListingComposeContainer} />
     </Switch>
+    <Footer/>
   </div>
 );
 
