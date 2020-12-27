@@ -9,7 +9,7 @@ class Listing extends React.Component {
 
     this.state = {
       listing: {},
-      catagories: {}
+      categories: {}
     }
   }
 
@@ -28,11 +28,15 @@ class Listing extends React.Component {
   }
 
   makeArraysForComponents() {
-    const detailCatagories = ['colors', 'finishes', 'length', 'shapes', 'size', 'styles']
-    detailCatagories.forEach(detail => {
+    const detailCategories = ['colors', 'finishes', 'length', 'shapes', 'size', 'styles']
+    detailCategories.forEach(detail => {
       if (this.state.listing[detail]) {
-        // this.setState({ catagories[detail]: (Object.keys(this.props.listing[detail]).filter(el => this.props.listing[detail][el])});
-        this.state.catagories[detail] = (Object.keys(this.state.listing[detail]).filter(el => this.state.listing[detail][el]))
+        // this.setState({ categories[detail]: (Object.keys(this.props.listing[detail]).filter(el => this.props.listing[detail][el])});
+        this.setState({
+          ...this.state.categories,
+          [detail]: Object.keys(this.state.listing[detail])
+                          .filter(el => this.state.listing[detail][el]),
+        })
       }
     })
   }
@@ -57,18 +61,18 @@ class Listing extends React.Component {
             </h1>
             <h2>${this.state.listing.price}</h2>
             <p>{this.state.listing.text}</p>
-              <DetailList key='colors' name='colors' details={this.state.catagories.colors}/>
-              {/* <DetailList key='finishes' name='finishes' details={this.state.catagories.finishes}/> */}
-              <DetailList key='styles' name='styles' details={this.state.catagories.styles}/>
+              <DetailList key='colors' name='colors' details={this.state.categories.colors}/>
+              {/* <DetailList key='finishes' name='finishes' details={this.state.categories.finishes}/> */}
+              <DetailList key='styles' name='styles' details={this.state.categories.styles}/>
             
             <form onSubmit={this.handleSubmit}>
-              <DetailDropdown key='size' name='size' options={this.state.catagories.size}/>
+              <DetailDropdown key='size' name='size' options={this.state.categories.size}/>
               <br/>
-              <DetailDropdown key='length' name='length' options={this.state.catagories.length}/>
+              <DetailDropdown key='length' name='length' options={this.state.categories.length}/>
               <br/>
-              <DetailDropdown key='shapes' name='shapes' options={this.state.catagories.shapes}/>
+              <DetailDropdown key='shapes' name='shapes' options={this.state.categories.shapes}/>
               <br/>
-              <DetailDropdown key='finishes' name='finishes' options={this.state.catagories.finishes}/>
+              <DetailDropdown key='finishes' name='finishes' options={this.state.categories.finishes}/>
           
             </form>
             
