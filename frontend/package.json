@@ -53,6 +53,8 @@
       "/insurance-fees",
       "/locations",
       "/appointments",
+      "/resources",
+      "/terms-conditions",
       "/resources"
     ],
     "exclude": [

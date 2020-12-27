@@ -1,12 +1,14 @@
 /* NAV MENU */
 .NavBar {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
   position: absolute;
   top: 2rem;
   left: 2rem;
   right: 2rem;
+  user-select: none;
+  z-index: 100;
 
   a {
     padding: 1rem;
@@ -15,4 +17,59 @@
   }
 }
 
+// hamburger icon button
+.menu-icon {
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  display: none;
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  padding: 1rem;
+
+  path {
+    fill: #FFFFFF;
+  }
+}
+
+.close-icon {
+  display: none;
+  font-size: 3rem;
+  text-align: right;
+  margin-right: .5rem;
+  padding: 1rem;
+  width: 32px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+// responsive menu
+@media screen and (max-width: 850px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .NavBar {
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: initial;
+    bottom: 0;
+    width: 240px;
+    padding-left: 2rem;
+    background: #080808;
+    display: none;
+
+    &--open {
+      display: flex;
+    }
+  }
+
+  .close-icon {
+    display: block;
+  }
+}
 
