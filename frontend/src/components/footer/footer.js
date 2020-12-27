@@ -20,11 +20,11 @@ class Footer extends React.Component {
                 <Link to={'/resources'}>Resources</Link>
         </nav>
         <nav>
-            <a href="/terms-conditions.php">Website Terms &amp; Conditions</a>
-            <a href="/privacy-policy.php">Website Privacy Policy</a>
-            <a className="email social-media" href="mailto:AlexisPetraMD@TransClinique.com"></a>
-            <a className="facebook social-media" href="https://www.facebook.com/transclinique"></a>
-            <a className="instagram social-media" href="https://www.instagram.com/transclinique/"></a>
+            <a href="/terms-conditions">Website Terms &amp; Conditions</a>
+            <a href="/privacy-policy">Website Privacy Policy</a>
+            <a className="email social-media" href="mailto:AlexisPetraMD@TransClinique.com">&nbsp;</a>
+            <a className="facebook social-media" href="https://www.facebook.com/transclinique">&nbsp;</a>
+            <a className="instagram social-media" href="https://www.instagram.com/transclinique/">&nbsp;</a>
         </nav>
         <p id="copyright">Copyright &copy; 2020 Alexis Petra, MD PLLC d/b/a TransClinique. All rights 
         reserved.
