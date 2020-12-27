@@ -20,6 +20,7 @@ class Resources extends React.Component {
                     <a href="http://linfraser.com/">Lin Fraser EdD</a>
                     <a href="http://drdavidnylund.com/">Dr. David Nylund, LCSW, PhD</a>
                     <a href="https://drtrishawallis.com/">Dr. Trisha D. Wallis, Psychologist</a>
+                    <a href="https://dankarasic.com/">Dr. Dan Karasic, MD</a>
                 </div>
                 <div id="mental-health-il">
                     <h3>Mental Health Providers (Illinois)</h3>
@@ -41,6 +42,7 @@ class Resources extends React.Component {
                 <div id="speech">
                     <h3>Speech Therapy Provider</h3>
                     <a href="https://www.exceptionalvoice.com/about-kathe-perez/">Exceptional Voice</a>
+                    <a href="https://www.genderexpressionvoicetraining.com/">Gender Expression Voice Training</a>
                 </div>
                 <div id="support-groups">
                     <h3>Support Groups</h3>
