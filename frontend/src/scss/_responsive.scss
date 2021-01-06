@@ -21,7 +21,7 @@
     column-gap:0;
   }
 
-  section#quote {padding:0;}
+  section#quote max{padding:0;}
   #quote img {width:30%}
 
   img {
@@ -91,6 +91,11 @@
   footer nav:nth-of-type(1), footer nav:nth-of-type(2) {display: block}
   footer p#copyright {grid-column: 1 / span 2; grid-row: 2 / span 1; margin-top:2rem;}
   footer p#disclaimer {grid-column: 1 / span 2; grid-row: 3 / span 1}
+
+  .terms-conditions,
+  .privacy-policy {
+    padding-top: 3rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
