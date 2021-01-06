@@ -7,6 +7,7 @@ import {
 import { 
   Switch,
   Route,
+  useLocation,
 } from 'react-router-dom';
 import NavBarContainer from './nav/navbar_container';
 import Footer from './footer/footer.js'
@@ -19,8 +20,8 @@ import InsuranceFees from './insurance-fees/insurance-fees.js';
 import Locations from './locations/locations.js';
 import Appointments from './appointments/appointments.js';
 import Resources from './resources/resources.js';
-
-
+import PrivacyPolicy from "./privacy-policy/privacy-policy";
+import TermsConditions from "./terms-conditions/terms-conditions";
 
 import ListingsContainer from './listings/listings_container';
 import ListingContainer from './listings/listing_container';
@@ -47,8 +48,8 @@ const App = () => (
       <Route exact path="/locations" component={Locations} />
       <Route exact path="/appointments" component={Appointments} />
       <Route exact path="/resources" component={Resources} />
-
-
+      <Route exact path="/privacy-policy" component={PrivacyPolicy} />
+      <Route exact path="/terms-conditions" component={TermsConditions} />
 
       <AuthRoute exact path="/login" component={LoginFormContainer} />
       <AuthRoute exact path="/signup" component={SignupFormContainer} />

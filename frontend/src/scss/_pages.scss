@@ -570,6 +570,16 @@ section#insurance-and-fees {
 
 }
 
-#terms-conditions, #privacy-policy {
-  display: block;
+.privacy-policy,
+.terms-conditions {
+  width: 70rem;
+  max-width: 100vw;
+  padding: 14rem 2rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  p {
+    font-size: 16px;
+    line-height: 1.75;
+  }
 }
