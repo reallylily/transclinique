@@ -1,7 +1,7 @@
 {
-  "name": "pressOnShop",
+  "name": "transClinique",
   "version": "1.0.0",
-  "description": "Super cute press on nails",
+  "description": "Tele-medicine for GNC folx",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",

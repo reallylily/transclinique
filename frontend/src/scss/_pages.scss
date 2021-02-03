@@ -165,7 +165,7 @@ section#mission {
   }
 }
 
-section#about {
+.about {
   padding-right: 0;
   padding-bottom: 0;
   column-gap: 0;
@@ -203,7 +203,7 @@ section#about {
   }
 }
 
-section#Alexis-Petra-MD {
+.Alexis-Petra-MD {
   h2 {
     grid-column: 1/ span 1;
     grid-row: 1 / span 1
@@ -220,14 +220,13 @@ section#Alexis-Petra-MD {
   }
 
   img {
-    grid-column: 2/ span 1;
-    grid-row: 1 / span 4;
-    place-self: start end;
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
     width: 100%
   }
 }
 
-section#process {
+.process {
   background: url("/img/pattern.gif") repeat-y -50% -1px;
   background-size: 60%;
 
@@ -583,3 +582,4 @@ section#insurance-and-fees {
     line-height: 1.75;
   }
 }
+
