@@ -19,7 +19,7 @@ class Appointments extends React.Component {
     <section id="appointments">
         <h2>Appointments</h2>
         <h3>We're ready to see you now!</h3>
-        <p>Please fill out the form on the right hand side of this page to book an appointment. If this is your first appointment with us, please include your Date of Birth in the notes at checkout. If you have any questions, please email us at <a href="mailto:alexispetramd@gmail.com">AlexisPetraMD@gmail.com</a>.</p>
+        <p>Please fill out the form on the right hand side of this page to book an appointment. If this is your first appointment with us, please include your Date of Birth(MM/DD/YYYY) in the notes at checkout. If you have any questions, please email us at <a href="mailto:alexispetramd@gmail.com">AlexisPetraMD@gmail.com</a>.</p>
 
         {/* Square Appointments Embed Container */}
         <div className="square-appointments-embed-container">&nbsp;</div>
