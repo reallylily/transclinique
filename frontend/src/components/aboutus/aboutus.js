@@ -29,6 +29,18 @@ class AboutUs extends React.Component {
                 <img  src="/img/allie.jpg" alt="Allie Ferrey M.S., NASM-CPT"/>
             </section>
 
+            <section className="Allie-Ferrey">
+                <h2>Meet The Makeup Artist</h2>
+                <h3>Casey Blake</h3>
+                <p>"I fell in love with makeup at the age of 15 after I cross-dressed for the first time. A few years later I started my transition (MTF) and out and proud as a trans woman. I’ve worked with many individuals on teaching makeup feminization tips/tricks and would love to help you too!"
+                  <br/>
+                  As a transgender woman who transitioned during high school, Casey has shared her experiences with the online world. Starting back in 2014, right after her 16th birthday, she began her YouTube channel to document milestones throughout her transition. In Casey’s professional career as a Sr. Graphic Designer working in marketing, she’s developed skills across the board. She has built the personal brand Casey Blake as a one-woman team with these learnings. Her personal brand includes the Instagram account @thecaseyblake, which organically reached over 60k accounts weekly and went from 3k to 50k followers in 24 months. Her goal is to transform the world into a safer place through acceptance and awareness.
+                  <br/>
+                  <a href="https://thecaseyblake.com/contact/makeup-lessons/">Consultation application</a>
+                </p>
+                <img  src="/img/CaseyBlake_BW_cropped.jpg" alt="Casey Blake"/>
+            </section>
+   
         </div>
     );
   }
