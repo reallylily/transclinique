@@ -29,6 +29,7 @@ class Resources extends React.Component {
                 <div id="mental-health-ny">
                     <h3>Mental Health Providers (New York)</h3>
                     <a href="https://www.psychologytoday.com/us/therapists/transgender/ny/new-york">Transgender Therapists in New York, NY</a>
+                    <a href="https://transnewyork.org/">Dr. Gennifer "Genn" Herley, TransNewYork</a>
                 </div>
                 <div id="reproductive">
                     <h3>Reproductive Care Providers</h3>
