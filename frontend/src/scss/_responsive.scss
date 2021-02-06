@@ -27,6 +27,17 @@
   img {
     max-width: calc(100vw - 6rem);
   }
+  .home .bookNow{
+    font-size: 5vw;
+    font-weight: 600;
+
+    grid-column: 1 / span 2; 
+    grid-row: 3 / span 1; 
+    justify-self: flex-start; 
+    margin: 0 2rem;
+    align-self: center; 
+    padding:2rem;
+  }
 
 /*
   section.mission, section.about {padding-left:0; grid-template-rows:15% 1fr; grid-template-rows: auto auto 5rem auto auto}
