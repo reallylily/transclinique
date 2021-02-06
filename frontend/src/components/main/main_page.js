@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 class MainPage extends React.Component {
 
@@ -7,6 +9,7 @@ class MainPage extends React.Component {
       <div className="home">
         <header id="home">
             <h1><strong>Trans</strong>Clinique</h1>
+            <Link className="bookNow" to={'/appointments'}>Book Appointment</Link>
             <p>Using telemedicine to create a virtual trans clinic that provides high-quality, convenient, and compassionate trans and gender nonconforming specific health care.</p>
         </header>
 

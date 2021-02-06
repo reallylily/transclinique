@@ -64,6 +64,28 @@ header nav {
     margin: 35% 10% .75rem 0
   }
 
+  .bookNow {
+    // border: 1px solid #C3DDF4;
+    // text-shadow: 0 0 4px black;
+    letter-spacing: -0.02em;
+    border-radius: 4px;
+    background: #c3ddf455;;
+    box-sizing: border-box;
+    padding: .5rem 2rem;
+    white-space: nowrap;
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 1;
+    align-self: end;
+    justify-self: center;
+    font-size: 3.4vw;
+    font-weight: 350;
+    margin: 3% 10% 2rem 0;
+    &:hover {
+      background: #C3DDF4;;
+      color: rgb(0, 0, 56);
+    }
+  }
+
   header {
     text-align: center;
     border-top: 1rem solid black;
@@ -73,7 +95,7 @@ header nav {
 
     p {
       grid-column: 2 / span 2;
-      grid-row: 3 / span 1;
+      grid-row: 4 / span 1;
       align-self: start;
       justify-self: center;
       text-align: center;
@@ -82,15 +104,15 @@ header nav {
       margin: 0 25% 40% 15%
     }
 
-    nav {
-      grid-column: 1 / span 2;
-      grid-row: 1 / span 1;
+    // nav {
+    //   grid-column: 1 / span 2;
+    //   grid-row: 1 / span 1;
 
-      a {
-        font-size: 1.1vw;
-        padding: 0 1.5%
-      }
-    }
+    //   a {
+    //     font-size: 1.1vw;
+    //     padding: 0 1.5%
+    //   }
+    // }
 
     svg,
     div img {
