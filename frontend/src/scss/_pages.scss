@@ -65,8 +65,7 @@ header nav {
   }
 
   .bookNow {
-    // border: 1px solid #C3DDF4;
-    // text-shadow: 0 0 4px black;
+
     letter-spacing: -0.02em;
     border-radius: 4px;
     background: #c3ddf455;;
@@ -88,7 +87,6 @@ header nav {
 
   header {
     text-align: center;
-    border-top: 1rem solid black;
     padding: 5rem 0 0 0;
     background: url("/img/header.jpg") no-repeat;
     background-size: cover;
@@ -103,16 +101,6 @@ header nav {
       line-height: 1.85;
       margin: 0 25% 40% 15%
     }
-
-    // nav {
-    //   grid-column: 1 / span 2;
-    //   grid-row: 1 / span 1;
-
-    //   a {
-    //     font-size: 1.1vw;
-    //     padding: 0 1.5%
-    //   }
-    // }
 
     svg,
     div img {
@@ -147,7 +135,7 @@ section#quote {
   img {
     grid-column-start: 2;
     grid-row: 3 / span 2;
-    place-self: end;
+
     width: 12rem;
     margin-right: 5rem
   }
@@ -225,18 +213,20 @@ section#mission {
   }
 }
 
-.Alexis-Petra-MD {
+.staff-desc {
   h2 {
     grid-column: 1/ span 1;
     grid-row: 1 / span 1
   }
 
   h3 {
+    white-space: nowrap;
     grid-column: 1/ span 1;
-    grid-row: 2 / span 1
+    grid-row: 2 / span 1;
   }
 
   p {
+    // text-indent: 5rem;
     grid-column: 1/ span 1;;
     grid-row: 3 / span 1
   }
@@ -246,28 +236,10 @@ section#mission {
     grid-row: 3 / span 1;
     width: 100%
   }
-}
 
-.Allie-Ferrey {
-  h2 {
-    grid-column: 1/ span 1;
-    grid-row: 1 / span 1
-  }
-
-  h3 {
-    grid-column: 1/ span 1;
-    grid-row: 2 / span 1
-  }
-
-  p {
-    grid-column: 1/ span 1;;
-    grid-row: 3 / span 1
-  }
-
-  img {
-    grid-column: 2 / span 1;
-    grid-row: 3 / span 1;
-    width: 100%
+  .instagram-icon {
+    width: 5rem;
+    height: 3rem;
   }
 }
 
@@ -531,7 +503,6 @@ section#insurance-and-fees {
   img {
     grid-column: 1 / span 2;
     grid-row: 9 / span 1;
-    place-self: center;
     position: relative;
     width: 10rem;
     margin: auto;
@@ -626,5 +597,10 @@ section#insurance-and-fees {
     font-size: 16px;
     line-height: 1.75;
   }
+}
+
+.instagram-icon {
+  width: 3rem;
+  height: 3rem;
 }
 

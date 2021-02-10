@@ -9,10 +9,12 @@ class InsuranceFees extends React.Component {
         <h2>Insurance &amp; Fees</h2>
         <div id="fees">
             <h3>Fee Structure</h3>
-            <p>Initial Visit for HRT $150 <br />                                    
-            Follow up Appointments for HRT $100 <br />
-            Urgent and Primary Care visits  $100 <br />
-            Gender Name Change Letter $100</p>
+            <p>
+                New Patient Evaluation for HRT $150 <br/>                                    
+                Existing Patient Evaluation for HRT $125 <br/>
+                Urgent and Primary Care Evaluation  $125 <br/>
+                Gender Name Change Letter $100
+            </p>
         </div>
         <div id="labs">
             <h3>Labs</h3>
