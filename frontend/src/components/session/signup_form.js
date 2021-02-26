@@ -16,29 +16,12 @@ class SignupForm extends React.Component {
     this.clearedErrors = false;
   }
 
-  // componentWillReceiveProps(nextProps) {
-  //   if (nextProps.signedIn === true) {
-  //     this.props.history.push('/login');
-  //   }
-
-  //   this.setState({errors: nextProps.errors})
-  // }
-
-  componentDidUpdate(prevProps) {
-    if (this.state.session.signedIn !== undefined) {
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.signedIn === true) {
       this.props.history.push('/login');
-
-      // let user = {
-      //   email: this.state.email,
-      //   // handle: this.state.handle,
-      //   password: this.state.password,
-      //   // password2: this.state.password2
-      // };
-      // console.log(user)
-      // this.props.login(user)
-      this.setState({errors: prevProps.errors})
     }
 
+    this.setState({errors: nextProps.errors})
   }
 
   update(field) {
@@ -57,7 +40,7 @@ class SignupForm extends React.Component {
     };
 
     this.props.signup(user, this.props.history)
-    console.log(this.state)
+      .then(() => this.props.login(user))
   }
 
   renderErrors() {
