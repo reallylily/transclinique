@@ -46,11 +46,11 @@ class AboutUs extends React.Component {
                 <h2>Meet The Personal Trainer</h2>
                 <h3>
                   Allie Ferrey M.S., NASM-CPT - 
-                  <a href="https://www.instagram.com/fitafitness_/">
+                  <a href="https://www.instagram.com/fitafitness_/" target="_blank" rel="noopener noreferrer" >
                       <img className="instagram-icon" src="/img/instagram.svg" alt="Instagram"/>
-                       @fitafitness_ 
+                       fitafitness_ 
                   </a> 
-                  <> - Email: </><a href="mailto:allieferrey@gmail.com">allieferrey@gmail.com</a>
+                  <> - Email: </><a href="mailto:allieferrey@gmail.com" target="_blank" rel="noopener noreferrer" >allieferrey@gmail.com</a>
                 </h3>
                 <p>
                   Allie is currently working towards her Ph.D. in Kinesiology at Columbia University in New York 
@@ -68,7 +68,7 @@ class AboutUs extends React.Component {
                   Contact her today for a new client session which includes a face to face talk about your 
                   goals, past injuries, and any other information you feel is relevent to your lifestyle goals. 
                   <br/>
-                  email: <a href="mailto:allieferrey@gmail.com">allieferrey@gmail.com</a>
+                  email: <a href="mailto:allieferrey@gmail.com" target="_blank" rel="noopener noreferrer" >allieferrey@gmail.com</a>
                 </p>
                 <img  src="/img/allie.jpg" alt="Allie Ferrey M.S., NASM-CPT"/>
             </section>
@@ -79,12 +79,14 @@ class AboutUs extends React.Component {
   
                 <h3>
                 <>Casey Blake - </>
-                  <a href="https://www.instagram.com/thecaseyblake/">
+                  <a href="https://www.instagram.com/thecaseyblake/" target="_blank" rel="noopener noreferrer" >
                       <img className="instagram-icon" src="/img/instagram.svg" alt="Instagram"/>
-                       @thecaseyblake
+                       thecaseyblake
                   </a>
                   <> - </>
-                  <a href="https://thecaseyblake.com/contact/makeup-lessons/">Consultation application</a>
+                  <a href="https://thecaseyblake.com/contact/makeup-lessons/" target="_blank" rel="noopener noreferrer" >
+                    Consultation application
+                  </a>
                 </h3>
 
 
@@ -97,12 +99,55 @@ class AboutUs extends React.Component {
                   A starlet by nature, Casey started her YouTube channel to document her transition on her 16th Birthday.
                   A Graphic Designer by trade, she has a single-handily developed her personal brand, 
                   Casey Blake, as a one-woman team. You can find her on Instagram at <></>
-                  <a href="https://https://www.instagram.com/thecaseyblake/">@thecaseyblake</a>.
+                  <a href="https://https://www.instagram.com/thecaseyblake/" target="_blank" rel="noopener noreferrer" >@thecaseyblake</a>.
                   She is motivated by a strong desire to transform the world into a safer 
                   place through acceptance and awareness.
                 </p>
 
                 <img  src="/img/CaseyBlake_BW_cropped.jpg" alt="Casey Blake"/>
+            </section>
+
+            <section className="staff-desc">
+                <h2>Meet Our Developer</h2>
+
+  
+                <h3>
+                <>Jitsu MacMaster QTPOC CTO - </>
+                  <a href="https://github.com/jitsumacmaster" target="_blank" rel="noopener noreferrer" >
+                      {/* <> github</> */}
+                      <img className="icon" src="/img/githublogo.png" alt="Github"/>
+                  </a>
+                  <> - </>
+                  <a href="https://www.linkedin.com/in/jitsu-macmaster" target="_blank" rel="noopener noreferrer" >
+                      {/* <> Linkedin</> */}
+                      <img className="icon-linkedin" src="/img/linkedin.png" alt="LinkedIn"/>
+                  </a>
+
+                </h3>
+
+
+                <p>
+                  Jitsu is a Biologist by training and a Software Developer by trade. She studied Intergrative Biology at UC Berkeley. 
+                  Like all students at Berkeley, she wished for a world where her work could make a positive social impact, but she settled 
+                  for organic chemistry and midterms. After spending time in managerial roles in the software industry, she 
+                  recognized how much potential even well developed technologies could still be leveraged to benefit people and 
+                  not just corporations &amp; shareholders. She learned computer programing and became a Software Developer skilled with 
+                  JavaScript, MERN Stack, Ruby, Rails, React-Redux, jQuery, SQL, as well as several acronyms. 
+                  <br/>
+                  <br/>
+                  Now she manages the web space for the amazing site that you're on right now(!!) as well as other pro-social charities 
+                  and non-profits.
+                  <br/>
+                  <br/>
+                  For free clothing for trans and GNC people check out 
+                  <br/>
+                  <a target="_blank" rel="noopener noreferrer"  href="https://www.instagram.com/transclosetclub/">
+                      <img className="instagram-icon" src="/img/instagram.svg" alt="Instagram"/>
+                       transclosetclub
+                  </a>
+                </p>
+
+                <img  src="/img/jitsucute.jpg" alt="Casey Blake"/>
             </section>
    
         </div>

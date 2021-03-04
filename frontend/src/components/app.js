@@ -7,7 +7,7 @@ import {
 import { 
   Switch,
   Route,
-  useLocation,
+  // useLocation,
 } from 'react-router-dom';
 import NavBarContainer from './nav/navbar_container';
 import Footer from './footer/footer.js'
