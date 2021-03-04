@@ -48,20 +48,27 @@ class AboutUs extends React.Component {
                   Allie Ferrey M.S., NASM-CPT - 
                   <a href="https://www.instagram.com/fitafitness_/">
                       <img className="instagram-icon" src="/img/instagram.svg" alt="Instagram"/>
-                       @fitafitness_
-                  </a>
+                       @fitafitness_ 
+                  </a> 
+                  <> - Email: </><a href="mailto:allieferrey@gmail.com">allieferrey@gmail.com</a>
                 </h3>
                 <p>
-                  Allie is currently working on her Ph.D. in Kinesiology at Columbia University in New York 
-                  and is CPR certified.  Her Master’s thesis and prime area of research observes the problems 
-                  and challenges that transgender youth face in school and recreational physical activity 
-                  environments. She has worked with youth fitness programs and is a WPATH member.
+                  Allie is currently working towards her Ph.D. in Kinesiology at Columbia University in New York 
+                  and is CPR certified. Her Master’s thesis and prime area of research expertice is on the problems 
+                  and challenges that transgender youth face in both school and recreational physical activity 
+                  environments. She has worked with youth fitness programs and is a WPATH member and presented at 
+                  the Fall 2020 WPATH conference.
                   <br/>
                   <br/>
                   In her work and academic life, she has advocated for minority groups, and aims to 
                   promote physical fitness and healthy lifestyles for all. She will work with you in 
                   creating a program that is tailored to your specific fitness goals and get you your 
                   desired results that you will be able to see, feel, and measure.
+                  <br/>
+                  Contact her today for a new client session which includes a face to face talk about your 
+                  goals, past injuries, and any other information you feel is relevent to your lifestyle goals. 
+                  <br/>
+                  email: <a href="mailto:allieferrey@gmail.com">allieferrey@gmail.com</a>
                 </p>
                 <img  src="/img/allie.jpg" alt="Allie Ferrey M.S., NASM-CPT"/>
             </section>
