@@ -36,7 +36,7 @@ class NavBar extends React.Component {
                 <Link to={'/insurance-fees'}>Insurance &amp; Fees</Link>
                 <Link to={'/locations'}>Locations</Link>
                 <Link to={'/resources'}>Resources</Link>
-                <Link to={'/profile'}>Profile</Link>
+                {/* <Link to={'/profile'}>Profile</Link> */}
                 <button onClick={this.logoutUser}>Logout</button>
             </>
         );
@@ -53,8 +53,8 @@ class NavBar extends React.Component {
                 <Link to={'/insurance-fees'}>Insurance &amp; Fees</Link>
                 <Link to={'/locations'}>Locations</Link>
                 <Link to={'/resources'}>Resources</Link>
-                <Link to={'/signup'}>Signup</Link>
-                <Link to={'/login'}>Login</Link>
+                {/* <Link to={'/signup'}>Signup</Link>
+                <Link to={'/login'}>Login</Link> */}
             </>
         );
       }
