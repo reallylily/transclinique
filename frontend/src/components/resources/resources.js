@@ -14,6 +14,10 @@ class Resources extends React.Component {
             </div>
             <div id="external">
                 <h4>TransClinique provides these links for your convenience; we have no formal relationships with these providers or groups</h4>
+                <div id="mental-health">
+                    <h3>Mental Health Providers</h3>
+                    <a href="https://www.onlinetherapy.com/resources-for-lgbtq/">Online Theray</a>
+                </div>
                 <div id="mental-health-ca">   
                     <h3>Mental Health Providers (California)</h3>
                     <a href="https://www.drericaanderson.com/">Erica E. Anderson, Ph.D</a>
@@ -25,15 +29,11 @@ class Resources extends React.Component {
                 <div id="mental-health-il">
                     <h3>Mental Health Providers (Illinois)</h3>
                     <a href="https://www.psychologytoday.com/us/therapists/transgender/illinois">Transgender Therapists in Illinois</a>
-                </div>
+                </div>                
                 <div id="mental-health-ny">
                     <h3>Mental Health Providers (New York)</h3>
                     <a href="https://www.psychologytoday.com/us/therapists/transgender/ny/new-york">Transgender Therapists in New York, NY</a>
                     <a href="https://transnewyork.org/">Dr. Gennifer "Genn" Herley, TransNewYork</a>
-                </div>
-                <div id="reproductive">
-                    <h3>Reproductive Care Providers</h3>
-                    <a href="https://www.pacificfertilitycenter.com/">Pacific Fertility Center</a>
                 </div>
                 <div id="legal">
                     <h3>Legal Resources</h3>
@@ -48,6 +48,10 @@ class Resources extends React.Component {
                 <div id="support-groups">
                     <h3>Support Groups</h3>
                     <a href="https://www.translifeline.org/">Trans Lifeline</a>
+                </div>
+                <div id="reproductive">
+                    <h3>Reproductive Care Providers</h3>
+                    <a href="https://www.pacificfertilitycenter.com/">Pacific Fertility Center</a>
                 </div>
             </div>
             {/* <img src="/img/transcliniqueLogo.svg" alt="TransClinique"/> */}
