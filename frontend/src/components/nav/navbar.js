@@ -33,11 +33,11 @@ class NavBar extends React.Component {
                 <Link to={'/process'}>Our Process</Link>
                 <Link to={'/services'}>Our Services</Link>
                 <Link to={'/expect'}>What to Expect</Link>
-                <Link to={'/insurance-fees'}>Insurance &amp; Fees</Link>
+                {/* <Link to={'/insurance-fees'}>Insurance &amp; Fees</Link> */}
                 <Link to={'/locations'}>Locations</Link>
                 <Link to={'/resources'}>Resources</Link>
                 {/* <Link to={'/profile'}>Profile</Link> */}
-                <button onClick={this.logoutUser}>Logout</button>
+                {/* <button onClick={this.logoutUser}>Logout</button> */}
             </>
         );
       } else {
@@ -50,7 +50,7 @@ class NavBar extends React.Component {
                 <Link to={'/process'}>Our Process</Link>
                 <Link to={'/services'}>Our Services</Link>
                 <Link to={'/expect'}>What to Expect</Link>
-                <Link to={'/insurance-fees'}>Insurance &amp; Fees</Link>
+                {/* <Link to={'/insurance-fees'}>Insurance &amp; Fees</Link> */}
                 <Link to={'/locations'}>Locations</Link>
                 <Link to={'/resources'}>Resources</Link>
                 {/* <Link to={'/signup'}>Signup</Link>

@@ -44,19 +44,19 @@ const App = () => (
       <Route exact path="/process" component={Process} />
       <Route exact path="/services" component={Services} />
       <Route exact path="/expect" component={Expect} />
-      <Route exact path="/insurance-fees" component={InsuranceFees} />
+      {/* <Route exact path="/insurance-fees" component={InsuranceFees} /> */}
       <Route exact path="/locations" component={Locations} />
       <Route exact path="/appointments" component={Appointments} />
       <Route exact path="/resources" component={Resources} />
       <Route exact path="/privacy-policy" component={PrivacyPolicy} />
       <Route exact path="/terms-conditions" component={TermsConditions} />
 
-      <AuthRoute exact path="/login" component={LoginFormContainer} />
+      {/* <AuthRoute exact path="/login" component={LoginFormContainer} />
       <AuthRoute exact path="/signup" component={SignupFormContainer} />
       <Route exact path="/listings/:id" component={ListingContainer} />
       <Route exact path="/listings" component={ListingsContainer} />
       <ProtectedRoute exact path="/profile" component={ProfileContainer} />
-      <ProtectedRoute exact path="/new_listing" component={ListingComposeContainer} />
+      <ProtectedRoute exact path="/new_listing" component={ListingComposeContainer} /> */}
     </Switch>
     <Footer/>
   </div>
