@@ -3,16 +3,16 @@ import React from 'react';
 
 class Appointments extends React.Component {
 
-  componentDidMount() {
-    const script = document.createElement("script");
-    script.src = "https://squareup.com/appointments/buyer/widget/kn6bsh8fou7l9b/L2EX4SEH240P1.js";
-    script.async = true;
-    document.querySelector('.square-appointments-embed-container').appendChild(script);
-  }
+  // componentDidMount() {
+  //   const script = document.createElement("script");
+  //   script.src = "https://squareup.com/appointments/buyer/widget/kn6bsh8fou7l9b/L2EX4SEH240P1.js";
+  //   script.async = true;
+  //   document.querySelector('.square-appointments-embed-container').appendChild(script);
+  // }
 
-  componentWillUnmount() {
-    document.querySelector('.square-appointments-embed-container iframe').remove();
-  }
+  // componentWillUnmount() {
+  //   document.querySelector('.square-appointments-embed-container iframe').remove();
+  // }
 
   render() {
     return (
