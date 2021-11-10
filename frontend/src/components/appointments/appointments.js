@@ -22,7 +22,7 @@ class Appointments extends React.Component {
         <p>New side under construction! To book an appointment please email us at <a href="mailto:alexispetramd@transclinique.com">AlexisPetraMD@gmail.com</a>.</p>
 
         {/* Square Appointments Embed Container */}
-        <div className="square-appointments-embed-container">&nbsp;</div>
+        {/* <div className="square-appointments-embed-container">&nbsp;</div> */}
 
         
     </section>
